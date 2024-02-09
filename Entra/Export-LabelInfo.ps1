@@ -1,6 +1,6 @@
 <#
     .SYNOPSIS
-       Export all FIDO2 registration info for all users within an Entra OD tenant
+       Export all FIDO2 registration info for all users within an Entra ID tenant
     
     .DESCRIPTION
         PowerShell script to gather and export all FIDO2 registration information for all users to a .CSV file.

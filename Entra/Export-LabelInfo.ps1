@@ -17,7 +17,7 @@
         Specify the full output path and filename for the CSV report file.
         If not specified, the script will produce an report in the current folder using the following file name: "Fido2Registration_Report.csv".
 
-    .PARAMATER Delimter
+    .PARAMETER Delimter
         Specify the delemiter character used for the CSV output file.
         If not specified, ";" will be used as delimiter.
 

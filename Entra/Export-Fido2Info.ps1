@@ -119,11 +119,11 @@ ForEach ($User in $Users){
 }
 
 ## Display Grouped Ouput
-$Fido2Regs |Group-Object Model | Select Count,Name
+$Fido2Regs | Group-Object Model -NoElement
+$Fido2Regs | Group-Object AaGuid -NoElement
 
 ## Export info to CSV
 $Fido2Regs | Select AaGuid,CreatedDateTime,DisplayName,Id,Model,UserID,UserPrincipalName,UserDisplayName | Export-Csv $CsvFile -Delimiter $Delimiter -NoTypeInformation -Encoding UTF8
-
 
 ## Disconnect Graph
 Write-Host "Disconnect Microsoft Graph"
